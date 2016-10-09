@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
-  font-size: 12px;
-  color: darkgray; }
+  font-size: 15px;
+  color: #222222; }
 
 .header {
   position: absolute;
@@ -12,7 +12,7 @@ body {
   line-height: 60px;
   text-transform: uppercase;
   text-align: center;
-  background: #005600;
+  background: #000831;
   color: white;
   font-weight: bolder; }
 
@@ -28,14 +28,20 @@ body {
   background: #0081ff; }
   .nav a {
     float: left;
-    width: 49%;
+    width: 50%;
     display: block;
     height: 60px;
-    line-height: 60px; }
+    line-height: 60px;
+    /** Avoid padding and margin change element size */
+    box-sizing: border-box;
+    border: solid 1px darkgray;
+    text-decoration: none;
+    color: white; }
   .nav a:first-child {
-    border-left: solid 1px black; }
-  .nav a:active {
-    background: yellow; }
+    border-right: solid 1px black; }
+  .nav a.active {
+    border-top: 3px;
+    background: #2b81af; }
 
 .view {
   position: absolute;
@@ -54,4 +60,17 @@ body {
   overflow-y: scroll;
   overflow-scrolling: touch;
   padding: 20px;
-  background: #FFF; }
+  background: #FFF;
+  -webkit-overflow-scrolling: touch; }
+
+.title {
+  font-size: 1.2em;
+  color: #0000fe; }
+
+.formButton {
+  float: right; }
+
+.weatherResult {
+  margin-top: 1em;
+  border: solid 1px gray;
+  padding: 0.5em; }
