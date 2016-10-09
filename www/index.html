@@ -19,30 +19,12 @@
 -->
 <html ng-app="app">
 <head>
-  <!--
-  Customize this policy to fit your own app' needs. For more guidance, see:
-      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-  Some notes:
-      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-          * Enable inline JS: add 'unsafe-inline' to default-src
-  -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
   <link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="node_modules/angular/angular.js"></script>
-  <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
-  <script type="text/javascript" src="node_modules/angular-material/angular-material.js"></script>
-  <script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
-  <script type="text/javascript" src="node_modules/angular-aria/angular-aria.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 
   <title>Weather</title>
 </head>
@@ -56,10 +38,25 @@
 
 </section>
 
+<!-- Navigation bar, on bottom of app -->
 <nav class='nav'>
-  <a href="#home">Home</a>
+  <a href="#weather">Weather</a>
   <a href="#about">About</a>
 </nav>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="node_modules/angular-material/angular-material.js"></script>
+<script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="node_modules/angular-aria/angular-aria.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/searchForm.js"></script>
+<script type="text/javascript" src="js/weatherResult.js"></script>
+<script type="text/javascript" src="js/weatherService.js"></script>
+<script type="text/javascript" src="js/positionService.js"></script>
 
 </body>
 </html>
