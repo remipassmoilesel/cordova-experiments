@@ -15,7 +15,7 @@ Unsigned apk available at: https://github.com/remipassmoilesel/cordova-tutorial/
 
 ## Screenshot
 
-![Screenshot](www/img/screenshot.png)
+![Screenshot](www/img/screenshot-min.png)
 
 
 
