@@ -1,16 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.remipassmoilesel.weather" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
     <name>Weather</name>
     <description>
-        Weather application that show weather. Wow !
-    </description>
+    Application that show weather. Wow !
+  </description>
     <author email="remi.passmoilesel@gmail.com" href="http://remi-pace.fr">
-        Rémi Passmoilesel
-    </author>
+    Remi Passmoilesel
+  </author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -20,5 +27,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon density="mdpi" height="50" platform="android" src="www/img/icon-android.png" width="50" />
+    <splash density="ldpi" src="www/img/splash-android.png" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

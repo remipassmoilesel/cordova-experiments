@@ -1,0 +1,93 @@
+body {
+  font-family: Arial;
+  font-size: 15px;
+  color: #222222;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #000831;
+  color: white;
+  font-weight: bolder;
+}
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #0081ff;
+
+  a {
+    float: left;
+    width: 50%;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+
+    /** Avoid padding and margin change element size */
+    box-sizing: border-box;
+    border: solid 1px darkgray;
+    text-decoration: none;
+    color: white;
+  }
+
+  a:first-child {
+    border-right: solid 1px black;
+  }
+
+  a.active {
+    border-top: 3px;
+    background: #2b81af;
+  }
+}
+
+.view {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 60px;
+  left: 0px;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  padding: 20px;
+  background: #FFF;
+
+  // touch scrolling
+  -webkit-overflow-scrolling: touch;
+}
+
+.title{
+  font-size: 1.2em;
+  color: #0000fe;
+}
+
+.formButton{
+  float: right;
+}
+
+.weatherResult{
+  margin-top: 1em;
+  border: solid 1px gray;
+  padding: 0.5em;
+}

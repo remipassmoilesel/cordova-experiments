@@ -7,9 +7,19 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "org.remipassmoilesel.weather"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "org.remipassmoilesel.weather"
+        },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.example.hello"
+            "PACKAGE_NAME": "org.remipassmoilesel.weather"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "org.remipassmoilesel.weather"
+        }
+    }
 }

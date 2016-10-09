@@ -1,0 +1,32 @@
+<form>
+
+  <div>
+
+    <md-input-container>
+      <label>City name</label>
+      <input ng-model="$ctrl.city">
+    </md-input-container>
+
+    <md-button class="md-raised md-primary formButton" ng-click="$ctrl.searchCity()">Search
+    </md-button>
+
+  </div>
+
+  <div>
+    Weather at my position
+    <md-button class="md-raised md-primary formButton" ng-click="$ctrl.searchPosition()">Search</md-button>
+  </div>
+
+  <div style="clear: both">&nbsp;</div>
+
+  <div class="error" ng-show="$ctrl.errorMessage">{{$ctrl.errorMessage}}</div>
+
+  <h3 ng-show="$ctrl.results && $ctrl.results.length > 0">Results</h3>
+
+  <weather-result
+      city="r.cityName"
+      country="r.cityCountry"
+      description="r.weatherDescription"
+      ng-repeat="r in $ctrl.results"></weather-result>
+
+</form>
