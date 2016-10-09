@@ -1,22 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.remipassmoilesel.weather" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Weather</name>
-    <description>
-        Weather application that show weather. Wow !
-    </description>
-    <author email="remi.passmoilesel@gmail.com" href="http://remi-pace.fr">
-        Rémi Passmoilesel
-    </author>
-    <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
+<widget id="org.remipassmoilesel.weather"
+        version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+  <name>Weather</name>
+
+  <description>
+    Application that show weather. Wow !
+  </description>
+
+  <author email="remi.passmoilesel@gmail.com" href="http://remi-pace.fr">
+    Remi Passmoilesel
+  </author>
+
+  <content src="index.html"/>
+
+  <plugin name="cordova-plugin-whitelist" spec="1"/>
+
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+
+  <platform name="android">
+
+    <allow-intent href="market:*"/>
+
+    <icon src="www/img/icon-android.png" platform="android" width="50" height="50" density="mdpi"/>
+    <splash src="www/img/splash-android.png" density="ldpi"/>
+
+  </platform>
+
+
 </widget>
