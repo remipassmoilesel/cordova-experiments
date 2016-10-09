@@ -6,7 +6,7 @@ document.addEventListener('deviceReady', function() {
 }, false);
 
 // application main module
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'ngMaterial']);
 
 // routes and views
 app.config(function($routeProvider) {

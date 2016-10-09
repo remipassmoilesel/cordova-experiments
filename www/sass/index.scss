@@ -1,7 +1,8 @@
 body {
   font-family: Arial;
   font-size: 12px;
-  color: darkgray; }
+  color: darkgray;
+}
 
 .header {
   position: absolute;
@@ -14,7 +15,8 @@ body {
   text-align: center;
   background: #005600;
   color: white;
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 .nav {
   position: absolute;
@@ -25,24 +27,34 @@ body {
   line-height: 60px;
   text-transform: uppercase;
   text-align: center;
-  background: #0081ff; }
-  .nav a {
+  background: #0081ff;
+  a {
     float: left;
     width: 49%;
     display: block;
     height: 60px;
-    line-height: 60px; }
-  .nav a:first-child {
-    border-left: solid 1px black; }
-  .nav a:active {
-    background: yellow; }
+    line-height: 60px;
+  }
+
+  a:first-child {
+    border-left: solid 1px black;
+  }
+
+  a:active {
+    background: yellow;
+  }
+}
 
 .view {
   position: absolute;
   top: 60px;
   right: 0;
   bottom: 60px;
-  left: 0px; }
+  left: 0px;
+}
+
+
+
 
 .panel {
   position: absolute;
@@ -54,4 +66,5 @@ body {
   overflow-y: scroll;
   overflow-scrolling: touch;
   padding: 20px;
-  background: #FFF; }
+  background: #FFF;
+}
